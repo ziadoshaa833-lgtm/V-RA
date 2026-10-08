@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VÉRA | Clothing Brand</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <h1 class="logo">VÉRA</h1>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#shop">Shop</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <button class="cart-btn" id="cartBtn">
+                🛒 Cart <span id="cartCount">0</span>
+            </button>
+
+            <button class="menu-btn" id="menuBtn">☰</button>
+        </nav>
+    </header>
+
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <p>NEW COLLECTION 2026</p>
+            <h2>WEAR YOUR<br>CONFIDENCE</h2>
+            <p class="hero-text">
+                Discover modern fashion designed for your everyday style.
+            </p>
+
+            <a href="#shop" class="shop-btn">SHOP NOW</a>
+        </div>
+    </section>
+
+
+    <section class="shop-section" id="shop">
+
+        <div class="section-title">
+            <p>OUR COLLECTION</p>
+            <h2>Latest Products</h2>
+        </div>
+
+        <div class="filters">
+            <button class="filter active" data-category="all">All</button>
+            <button class="filter" data-category="tshirt">T-Shirts</button>
+            <button class="filter" data-category="hoodie">Hoodies</button>
+            <button class="filter" data-category="pants">Pants</button>
+        </div>
+
+        <div class="products" id="products">
+
+            <div class="product" data-category="tshirt">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=600&q=80">
+                </div>
+
+                <div class="product-info">
+                    <h3>Classic White T-Shirt</h3>
+                    <p>$35</p>
+                    <button class="add-btn" data-name="Classic White T-Shirt" data-price="35">
+                        Add To Cart
+                    </button>
+                </div>
+            </div>
+
+
+            <div class="product" data-category="hoodie">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=600&q=80">
+                </div>
+
+                <div class="product-info">
+                    <h3>Premium Black Hoodie</h3>
+                    <p>$65</p>
+                    <button class="add-btn" data-name="Premium Black Hoodie" data-price="65">
+                        Add To Cart
+                    </button>
+                </div>
+            </div>
+
+
+            <div class="product" data-category="pants">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?auto=format&fit=crop&w=600&q=80">
+                </div>
+
+                <div class="product-info">
+                    <h3>Relaxed Black Pants</h3>
+                    <p>$55</p>
+                    <button class="add-btn" data-name="Relaxed Black Pants" data-price="55">
+                        Add To Cart
+                    </button>
+                </div>
+            </div>
+
+
+            <div class="product" data-category="tshirt">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=600&q=80">
+                </div>
+
+                <div class="product-info">
+                    <h3>Oversized Beige T-Shirt</h3>
+                    <p>$40</p>
+                    <button class="add-btn" data-name="Oversized Beige T-Shirt" data-price="40">
+                        Add To Cart
+                    </button>
+                </div>
+            </div>
+
+
+            <div class="product" data-category="hoodie">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1578681994506-b8f463449011?auto=format&fit=crop&w=600&q=80">
+                </div>
+
+                <div class="product-info">
+                    <h3>Grey Essential Hoodie</h3>
+                    <p>$70</p>
+                    <button class="add-btn" data-name="Grey Essential Hoodie" data-price="70">
+                        Add To Cart
+                    </button>
+                </div>
+            </div>
+
+
+            <div class="product" data-category="pants">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1473966968600-fa801b869a1a?auto=format&fit=crop&w=600&q=80">
+                </div>
+
+                <div class="product-info">
+                    <h3>Street Cargo Pants</h3>
+                    <p>$60</p>
+                    <button class="add-btn" data-name="Street Cargo Pants" data-price="60">
+                        Add To Cart
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="about" id="about">
+        <div>
+            <p>ABOUT VÉRA</p>
+            <h2>Simple. Modern. You.</h2>
+        </div>
+
+        <p>
+            VÉRA is a modern clothing brand focused on clean designs,
+            comfortable materials and timeless fashion.
+        </p>
+    </section>
+
+
+    <section class="newsletter" id="contact">
+        <h2>Join Our Community</h2>
+        <p>Get updates about new collections and special offers.</p>
+
+        <form id="emailForm">
+            <input
+                type="email"
+                id="email"
+                placeholder="Enter your email"
+            >
+
+            <button type="submit">Subscribe</button>
+        </form>
+
+        <p id="message"></p>
+    </section>
+
+
+    <footer>
+        <h2>VÉRA</h2>
+        <p>© 2026 VÉRA Clothing. All Rights Reserved.</p>
+    </footer>
+
+
+    <div class="cart" id="cart">
+        <div class="cart-header">
+            <h2>Your Cart</h2>
+            <button id="closeCart">×</button>
+        </div>
+
+        <div id="cartItems"></div>
+
+        <div class="cart-total">
+            <h3>Total: $<span id="total">0</span></h3>
+            <button id="checkout">Checkout</button>
+        </div>
+    </div>
+
+    <div class="overlay" id="overlay"></div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
